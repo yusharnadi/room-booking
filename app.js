@@ -1,6 +1,4 @@
 const express = require('express');
-const authMiddleware = require('./authMiddleware');
-const jwt = require('jsonwebtoken');
 const router = require('./router');
 
 require('dotenv').config();
