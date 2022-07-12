@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "9d529b63-9972-48d3-8f91-65f47fa3e28c",
+		"name": "Room Booking",
+		"description": "User Admin \n{\n    \"name\": \"admin\",\n    \"email\" : \"admin@mail.com\",\n    \"password\" : \"admin\",\n    \"role\" : \"admin\"\n}\n\nUser Karyawan\n{\n    \"name\": \"karyawan\",\n    \"email\" : \"karyawan@mail.com\",\n    \"password\" : \"karyawan\",\n    \"role\" : \"karyawan\"\n}\n\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rooms",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FyeWF3YW4iLCJlbWFpbCI6Imthcnlhd2FuQG1haWwuY29tIiwicm9sZSI6Imthcnlhd2FuIiwiaWF0IjoxNjU3NjA2NzI0fQ.OMs40gWfqCucURRw5d42NPl91FYsiSpPUkEYUvapi2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}room",
+					"host": [
+						"{{host}}room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FyeWF3YW4iLCJlbWFpbCI6Imthcnlhd2FuQG1haWwuY29tIiwicm9sZSI6Imthcnlhd2FuIiwiaWF0IjoxNjU3NjA2NzI0fQ.OMs40gWfqCucURRw5d42NPl91FYsiSpPUkEYUvapi2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}book",
+					"host": [
+						"{{host}}book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking By ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FyeWF3YW4iLCJlbWFpbCI6Imthcnlhd2FuQG1haWwuY29tIiwicm9sZSI6Imthcnlhd2FuIiwiaWF0IjoxNjU3NjA2NzI0fQ.OMs40gWfqCucURRw5d42NPl91FYsiSpPUkEYUvapi2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}book/1",
+					"host": [
+						"{{host}}book"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FyeWF3YW4iLCJlbWFpbCI6Imthcnlhd2FuQG1haWwuY29tIiwicm9sZSI6Imthcnlhd2FuIiwiaWF0IjoxNjU3NjA2NzI0fQ.OMs40gWfqCucURRw5d42NPl91FYsiSpPUkEYUvapi2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\": \"Budi\",\n    \"usage_description\": \"Meeting Safari Ramadhan\",\n    \"room_id\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}book",
+					"host": [
+						"{{host}}book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3BlcmF0b3IiLCJyb2xlIjoib3BlcmF0b3IiLCJpYXQiOjE2NTczNzE2Nzd9.UanDULRf_O9ItEte1tkEK32Xyfpi9vq0fm9FV1oNVOA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\": \"\",\n    \"usage_description\": \"\",\n    \"room_id\": \"as\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}book",
+					"host": [
+						"{{host}}book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FyeWF3YW4iLCJlbWFpbCI6Imthcnlhd2FuQG1haWwuY29tIiwicm9sZSI6Imthcnlhd2FuIiwiaWF0IjoxNjU3NjA2NzI0fQ.OMs40gWfqCucURRw5d42NPl91FYsiSpPUkEYUvapi2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\": \"\",\n    \"usage_description\": \"\",\n    \"room_id\": \"as\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}book/15",
+					"host": [
+						"{{host}}book"
+					],
+					"path": [
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"karyawan\",\n    \"email\" : \"karyawan@mail.com\",\n    \"password\" : \"karyawan\",\n    \"role\" : \"karyawan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}auth/register",
+					"host": [
+						"{{host}}auth"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"karyawan@mail.com\",\n    \"password\" : \"karyawan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}auth/login",
+					"host": [
+						"{{host}}auth"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000/api/v1/"
+		}
+	]
+}
